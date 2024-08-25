@@ -1,6 +1,6 @@
 {
   "name": "objectreferencevscodeextension",
-  "displayName": "ObjectReferenceVSCodeExtension",
+  "displayName": "ObjectReference VSCode Extension",
   "description": "快速帶入ObjectReference關聯的屬性或欄位",
   "version": "1.0.0",
   "publisher": "Pinhsu",
