@@ -1,10 +1,14 @@
 {
-  "name": "ojectreferencehelper",
-  "displayName": "OjectReferenceHelper",
+  "name": "objectreferencevscodeextension",
+  "displayName": "ObjectReferenceVSCodeExtension",
   "description": "快速帶入ObjectReference關聯的屬性或欄位",
   "version": "1.0.0",
   "publisher": "Pinhsu",
   "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HsuPing/ObjectReferenceVSCodeExtension"
+  },
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -25,13 +29,12 @@
       }
     ],
     "keybindings": [
-    {
-      "command": "extension.convertToInitObjectReference",
-      "key": "ctrl+shift+o",
-      "mac": "cmd+shift+o"
-    }
-  ]
-
+      {
+        "command": "extension.convertToInitObjectReference",
+        "key": "ctrl+shift+o",
+        "mac": "cmd+shift+o"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -42,14 +45,14 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.91.0",
     "@types/mocha": "^10.0.7",
-    "@types/node": "20.x",
+    "@types/node": "^20.16.1",
+    "@types/vscode": "^1.91.0",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
     "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
   }
 }
